@@ -3,13 +3,19 @@
         <link rel="shortcut icon" type="image/png" href="https://www.nicepng.com/png/detail/367-3672718_diwali-diya-free-clipart-diya.png"/>
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
         <title>Happy Diwali</title>
+        <meta property="og:title" content="Happy Diwali" />
+        <meta property="og:description" content="Wishing you and your family a happy and prosperous Diwali" />
+        <meta property="og:image" content="https://ibb.co/hsWPFbG" />
     </head>
 
     <body>
         <style>
-            @media (min-width: 320px) and (max-width: 480px) {
-                
-            }
+            /* @media (min-width: 320px) and (max-width: 480px) {
+                .circle {
+					width: 800px;
+                	height: 800px;
+				}
+            } */
             body {
                 margin: 0;
                 padding: 0;
@@ -28,6 +34,18 @@
                 background: #ff8d00;
 				border: 5px solid #fff;
                 box-shadow: 0 20px 100px rgba(0, 0, 0, 0.5);
+            }
+
+			.circle::before {
+                content: '';
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                border: 8px dotted #fff;
+                box-sizing: border-box;
+                border-radius: 50%;
+                /* transform: scale(1.05); */
+                animation: rotate 20s linear infinite;
             }
 
             .greeting {
@@ -49,18 +67,6 @@
 
             .greeting > div:last-child {
                 font-size: 100px;
-            }
-
-            .circle::before {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                border: 8px dotted #fff;
-                box-sizing: border-box;
-                border-radius: 50%;
-                transform: scale(1.05);
-                animation: rotate 20s linear infinite;
             }
 
             @keyframes rotate {
